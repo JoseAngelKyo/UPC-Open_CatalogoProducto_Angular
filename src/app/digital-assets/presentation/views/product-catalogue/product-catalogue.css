@@ -1,0 +1,45 @@
+.catalogue-container {
+  width: 100%;          /* Corregido el 1000% para que no se desborde */
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 24px;
+  box-sizing: border-box;
+}
+
+.view-title {
+  margin-bottom: 24px;
+  font-size: 32px;
+  font-weight: 700;
+  color: #1e293b;
+}
+
+.filter-section {
+  margin-bottom: 32px;
+}
+
+.cards-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px;            /* Aumentado de 24px a 32px para darle más separación y aire */
+  width: 100%;
+}
+
+/* Opcional: Para que las tarjetas individuales tengan un espaciado interno limpio si lo necesitas */
+.cards-grid > * {
+  display: flex;
+  flex-direction: column;
+}
+
+@media (max-width: 900px) {
+  .cards-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+  }
+}
+
+@media (max-width: 600px) {
+  .cards-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+}

@@ -1,0 +1,62 @@
+<mat-card class="product-card">
+  <img
+    mat-card-image
+    [src]="product.imageUrl"
+    [alt]="product.title"
+    class="product-image">
+
+  <mat-card-header>
+    <div mat-card-avatar class="card-avatar">
+      <mat-icon color="primary" aria-hidden="true">
+        inventory_2
+      </mat-icon>
+    </div>
+
+    <mat-card-title>
+      {{ product.title }}
+    </mat-card-title>
+
+    <mat-card-subtitle>
+      {{ product.category }}
+    </mat-card-subtitle>
+  </mat-card-header>
+
+  <mat-card-content class="card-content">
+    <p>
+      <strong>
+        {{ 'CARD.DESCRIPTION' | translate }}
+      </strong>
+      <span>
+        {{ product.description }}
+      </span>
+    </p>
+    <p>
+      <strong>
+        {{ 'CARD.PRICE' | translate }}
+      </strong>
+      <span>
+        ${{ product.price | number:'1.2-2' }}
+      </span>
+    </p>
+    <p>
+      <strong>
+        {{ 'CARD.RATING' | translate }}
+      </strong>
+      <span>
+        {{ product.rating }}
+      </span>
+    </p>
+  </mat-card-content>
+
+  <mat-divider></mat-divider>
+
+  <mat-card-footer class="card-footer">
+    <button
+      mat-button
+      type="button"
+      aria-label="View product details">
+      {{ 'CARD.DETAILS' | translate }}
+    </button>
+
+  </mat-card-footer>
+</mat-card>

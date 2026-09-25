@@ -1,0 +1,48 @@
+<div class="catalogue-container">
+
+  <h1 class="view-title">
+    {{ 'CATALOGUE.TITLE' | translate }}
+  </h1>
+
+  <div class="filter-section">
+    <mat-button-toggle-group
+      value="phone"
+      aria-label="Product category"
+    >
+      <mat-button-toggle
+        value="phone"
+        (change)="onCategoryChange('phone')"
+      >
+        {{ 'CATALOGUE.PHONE' | translate }}
+      </mat-button-toggle>
+
+      <mat-button-toggle
+        value="laptop"
+        (change)="onCategoryChange('laptop')"
+      >
+        {{ 'CATALOGUE.LAPTOP' | translate }}
+      </mat-button-toggle>
+    </mat-button-toggle-group>
+  </div>
+
+  @if (store.isLoading()) {
+
+    <mat-spinner />
+
+  } @else if (store.errorMessage()) {
+
+    <p>{{ store.errorMessage() }}</p>
+
+  } @else {
+
+    <div class="cards-grid">
+
+      @for (product of store.products(); track product.id) {
+        <app-product-card [product]="product" />
+      }
+
+    </div>
+
+  }
+
+</div>
