@@ -1,0 +1,20 @@
+{
+  "TOOLBAR": {
+    "TITLE": "Explorador de Productos"
+  },
+  "CATALOGUE": {
+    "TITLE": "Catálogo de Productos",
+    "PHONE": "Teléfonos",
+    "LAPTOP": "Laptops"
+  },
+  "CARD": {
+    "CATEGORY": "Categoría",
+    "PRICE": "Precio",
+    "RATING": "Calificación",
+    "DETAILS": "Detalles del Producto"
+  },
+  "FOOTER": {
+    "COPYRIGHT": "Copyright © 2026 Explorador de Productos. Todos los derechos reservados.",
+    "DEVELOPED_BY": "Desarrollado por"
+  }
+}

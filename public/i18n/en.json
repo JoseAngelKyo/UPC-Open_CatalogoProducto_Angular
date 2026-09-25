@@ -1,0 +1,20 @@
+{
+  "TOOLBAR": {
+    "TITLE": "Product Explorer"
+  },
+  "CATALOGUE": {
+    "TITLE": "Product Catalogue",
+    "PHONE": "Phone",
+    "LAPTOP": "Laptop"
+  },
+  "CARD": {
+    "CATEGORY": "Category",
+    "PRICE": "Price",
+    "RATING": "Rating",
+    "DETAILS": "Product Details"
+  },
+  "FOOTER": {
+    "COPYRIGHT": "Copyright © 2026 Product Explorer. All rights reserved.",
+    "DEVELOPED_BY": "Developed by"
+  }
+}
